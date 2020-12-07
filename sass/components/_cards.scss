@@ -2,6 +2,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
+  width: 100%;
   &__side {
     color: white;
     height: 50rem;
@@ -14,7 +15,9 @@
     border-radius: 3px;
 
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-
+    @include respond(tab-land) {
+      width: 100%;
+    }
     &--front {
       background-color: white;
     }
@@ -159,11 +162,22 @@
   }
 }
 .features {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 80%;
-  height: 30%;
   justify-content: space-around;
-  position: relative;
+  &__col-1-of-3 {
+    width: 30%;
+    height: 50rem;
+
+    @include respond(tab-land) {
+      width: 70%;
+      margin: 2rem;
+    }
+  }
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
