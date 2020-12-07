@@ -1,0 +1,45 @@
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+@import "base/base";
+@import "pages/home";
+@import "components/btn";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/cards";
+@import "components/bg-video";
+@import "components/form";
+@import "components/story";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/popup";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(phone) {
+    font-size: 30%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+body {
+  box-sizing: border-box;
+}
