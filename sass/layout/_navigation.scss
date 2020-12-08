@@ -83,6 +83,10 @@
 
   &__checkbox:checked ~ &__background {
     transform: scale(50);
+
+    @include respond(big-desktop) {
+      transform: scale(300);
+    }
   }
   &__checkbox:checked ~ &__nav {
     opacity: 1;

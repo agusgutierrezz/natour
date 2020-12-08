@@ -8,7 +8,7 @@
   justify-content: space-between;
   left: 15%;
   align-items: center;
-
+  border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 
   &__button {
@@ -20,6 +20,7 @@
     font-weight: 700;
     font-size: 1.4rem;
     text-align: center;
+    border-radius: 3px;
   }
   &__text {
     width: 100%;

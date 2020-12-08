@@ -1,4 +1,16 @@
+.row-booking {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
 .form {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -14,6 +26,7 @@
     width: 70%;
     display: block;
     transition: all 0.3s;
+    margin: 0 auto;
 
     &:focus {
       outline: none;
@@ -42,7 +55,6 @@
     transform: translateY(-4rem);
   }
   &__radio-group {
-    width: 40%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,6 +67,7 @@
     font-size: 1.2rem;
     position: relative;
     padding-left: 4rem;
+    margin: 2rem;
   }
   &__radio-button {
     height: 2rem;
@@ -88,5 +101,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 }
