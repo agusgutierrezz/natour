@@ -57,57 +57,26 @@
         </h1>
         <a href="#" class="btn btn-white btn-animated">Discover our tours</a>
       </div>
+      <div class="search">
+        <div class="search__text">
+          <label><i class="fas fa-map-marker-alt"></i> </label>
+          <input type="text" placeholder="Destination" />
+        </div>
+        <div class="search__button">Search</div>
+      </div>
     </header>
+
     <main>
-      <section class="section-about">
-        <div class="u-left-text u-margin-bottom-8">
-          <h2 class="heading-secondary">
-            Exciting tours for adventurous people
-          </h2>
-        </div>
-        <div class="aboutRow">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              You are going to fall in love with nature
-            </h3>
-            <p class="paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae ut aut hic possimus?
-            </p>
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              Live Adventures like you never have before
-            </h3>
-            <p class="paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <a href="#" class="btn-text">Learn More &rarr;</a>
-          </div>
-          <div class="col-1-of-2">
-            <div class="composition">
-              <img
-                src="img/about1.jpg "
-                alt="picture"
-                class="composition__photo composition__photo--p1"
-              />
-              <img
-                src="img/about2.jpg"
-                alt="picture"
-                class="composition__photo composition__photo--p2"
-              />
-              <img
-                src="img/about3.jpg"
-                alt="picture"
-                class="composition__photo composition__photo--p3"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section-features">
         <div class="row">
           <div class="feature-box">
-            <i class="far fa-heart feature-box__icon"></i>
-            <h3 class="heading-tertiary feature_text u-margin-bottom-small">
+            <i
+              style="background-color: #ff5d00"
+              class="far fa-heart feature-box__icon"
+            ></i>
+            <h3
+              class="heading-tertiary feature-box__text u-margin-bottom-small u-margin-top-medium"
+            >
               Explore the world
             </h3>
             <p class="feature-box__text">
@@ -116,8 +85,13 @@
           </div>
 
           <div class="feature-box">
-            <i class="far fa-compass feature-box__icon"></i>
-            <h3 class="heading-tertiary feature_text u-margin-bottom-small">
+            <i
+              style="background-color: #fb7900"
+              class="far fa-compass feature-box__icon"
+            ></i>
+            <h3
+              class="heading-tertiary feature-box__text u-margin-bottom-small u-margin-top-medium"
+            >
               Explore the world
             </h3>
             <p class="feature-box__text">
@@ -126,8 +100,13 @@
           </div>
 
           <div class="feature-box">
-            <i class="fas fa-map feature-box__icon"></i>
-            <h3 class="heading-tertiary feature_text u-margin-bottom-small">
+            <i
+              style="background-color: #e34100"
+              class="fas fa-map feature-box__icon"
+            ></i>
+            <h3
+              class="heading-tertiary feature-box__text u-margin-bottom-small u-margin-top-medium"
+            >
               Explore the world
             </h3>
             <p class="feature-box__text">
@@ -136,8 +115,13 @@
           </div>
 
           <div class="feature-box">
-            <i class="fas fa-globe feature-box__icon"></i>
-            <h3 class="heading-tertiary feature_text u-margin-bottom-small">
+            <i
+              style="background-color: #ff9027"
+              class="fas fa-globe feature-box__icon"
+            ></i>
+            <h3
+              class="heading-tertiary feature-box__text u-margin-bottom-small u-margin-top-medium"
+            >
               Explore the world
             </h3>
             <p class="feature-box__text">
@@ -146,6 +130,7 @@
           </div>
         </div>
       </section>
+
       <section class="section-tours">
         <div class="u-margin-bottom-8">
           <h2 class="heading-secondary">Most Popular Tours</h2>
@@ -246,65 +231,130 @@
       <div class="u-center-text btn-tours">
         <a href="" class="btn btn-green">Discover all tours</a>
       </div>
+      <section class="section-slide">
+        <div class="container">
+          <div data-am-gallery>
+            <!-- Radio -->
+            <input type="radio" name="gallery" id="img-1" checked />
+            <input type="radio" name="gallery" id="img-2" />
+            <input type="radio" name="gallery" id="img-3" />
+
+            <!-- Images -->
+            <div class="images">
+              <div
+                class="image"
+                style="
+                  background-image: linear-gradient(
+                      to right bottom,
+                      rgba(142, 135, 120, 0.8),
+                      rgba(253, 86, 2, 0.5)
+                    ),
+                    url(https://images.unsplash.com/photo-1433190152045-5a94184895da?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);
+                "
+              >
+                <h3 class="container__text u-margin-bottom-small">
+                  You are going to fall in love with nature
+                </h3>
+                <p class="container__paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae ut aut hic possimus?
+                </p>
+              </div>
+              <div
+                class="image"
+                style="
+                  background-image: linear-gradient(
+                      to right bottom,
+                      rgba(142, 135, 120, 0.8),
+                      rgba(253, 86, 2, 0.5)
+                    ),
+                    url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);
+                "
+              >
+                <h3 class="container__text u-margin-bottom-small">
+                  You are going to fall in love with nature
+                </h3>
+                <p class="container__paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae ut aut hic possimus?
+                </p>
+              </div>
+              <div
+                class="image"
+                style="
+                  background-image: linear-gradient(
+                      to right bottom,
+                      rgba(142, 135, 120, 0.8),
+                      rgba(253, 86, 2, 0.5)
+                    ),
+                    url(https://images.unsplash.com/photo-1449057528837-7ca097b3520c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);
+                "
+              >
+                <h3 class="container__text u-margin-bottom-small">
+                  You are going to fall in love with nature
+                </h3>
+                <p class="container__paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae ut aut hic possimus?
+                </p>
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="navigation">
+              <label class="dot" for="img-1"></label>
+              <label class="dot" for="img-2"></label>
+              <label class="dot" for="img-3"></label>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section-stories">
         <div class="u-margin-bottom-8">
           <h2 class="heading-secondary">We make people genuinely happy</h2>
         </div>
-        <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="stories-row">
-          <div class="story">
-            <figure class="story__shape">
-              <img
-                src="img/stories-2.jpg"
-                alt="Person on a tour"
-                class="story__image"
-              />
-              <figcaption class="story__caption">John Doe</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u.u-margin-bottom-small">
-                WOW!My life is completely different.
-              </h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-                unde est, veritatis, et ipsa reprehenderit illo corporis non
-                doloremque sed, facilis odio!
-              </p>
+
+        <div class="story">
+          <figure class="story__shape">
+            <img
+              src="img/stories-2.jpg"
+              alt="Person on a tour"
+              class="story__image"
+            />
+          </figure>
+          <div class="story__text">
+            <div class="story__text__stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
+            <h3 class="heading-tertiary">
+              Wow! My life is completely different.
+            </h3>
+            <h6 class="story__caption">John Doe</h6>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+              unde est, veritatis, et ipsa reprehenderit illo corporis non
+              doloremque sed, facilis odio! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Sequi Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Sequi unde est, veritatis, et ipsa
+              reprehenderit illo corporis non doloremque sed, facilis odio!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+            </p>
           </div>
-          <div class="story">
-            <figure class="story__shape">
-              <img
-                src="img/stories-1.jpg"
-                alt="Person on a tour"
-                class="story__image"
-              />
-              <figcaption class="story__caption">Mery Smith</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u.u-margin-bottom-small">
-                I had the best week ever with my family
-              </h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-                unde est, veritatis, et ipsa reprehenderit illo corporis non
-                doloremque sed, facilis odio!
-              </p>
-            </div>
-          </div>
-          <a href="#" class="btn-text">Read all stories &rarr;</a>
         </div>
       </section>
+      <div class="story__button u-margin-left-small u-margin-bottom-8">
+        <a href="#" class="btn-text">Read all stories &rarr;</a>
+      </div>
       <section class="section-book">
         <div class="row">
           <div class="book">
             <div class="book__form">
               <form action="#" class="form" autocomplete="off">
-                <div class="u-margin-bottom-medium">
+                <div class="u-margin-bottom-8">
                   <h2 class="heading-secondary u-margin-left">
                     Start Booking Now
                   </h2>
@@ -401,6 +451,7 @@
         </div>
       </div>
     </footer>
+
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">

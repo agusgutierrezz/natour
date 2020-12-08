@@ -11,7 +11,7 @@
   transition: all 0.3s;
 
   &__content {
-    width: 75%;
+    width: 55%;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -66,6 +66,7 @@
   &__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
+    margin-top: 4rem;
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #eee;
