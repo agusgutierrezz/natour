@@ -15,6 +15,12 @@
       src="https://kit.fontawesome.com/14dd9125ec.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function closeNav() {
+        document.getElementById("navi-toggle").checked = false;
+      }
+    </script>
+
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
@@ -27,21 +33,38 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="" class="navigation__link">
-              <span>01</span> About Natour</a
+            <a onclick="closeNav()" href="#search" class="navigation__link">
+              <span>01</span>Search
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a onclick="closeNav()" href="#features" class="navigation__link"
+              ><span>02</span>Your Benefits</a
             >
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link"><span>02</span>Your Benefits</a>
+            <a
+              onclick="closeNav()"
+              href="#section-tours"
+              class="navigation__link"
+              ><span>03</span>Popular Tours</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link"><span>03</span>Popular Tours</a>
+            <a
+              onclick="closeNav()"
+              href="#section-stories"
+              class="navigation__link"
+              ><span>04</span>Stories</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link"><span>04</span>Stories</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link"><span>05</span>Book Now</a>
+            <a
+              onclick="closeNav()"
+              href="#section-book"
+              class="navigation__link"
+              ><span>05</span>Book Now</a
+            >
           </li>
         </ul>
       </nav>
@@ -55,19 +78,21 @@
           <span class="heading-primary-main">Outdoors</span>
           <span class="heading-primary-sub">is where life happens</span>
         </h1>
-        <a href="#" class="btn btn-white btn-animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn-white btn-animated"
+          >Discover our tours</a
+        >
       </div>
       <div class="search">
         <div class="search__text">
           <label><i class="fas fa-map-marker-alt"></i> </label>
           <input type="text" placeholder="Destination" />
         </div>
-        <div class="search__button">Search</div>
+        <div id="search" class="search__button">Search</div>
       </div>
     </header>
 
     <main>
-      <section class="section-features">
+      <section id="features" class="section-features">
         <div class="row">
           <div class="feature-box">
             <i
@@ -77,7 +102,7 @@
             <h3
               class="heading-tertiary feature-box__text u-margin-bottom-small u-margin-top-medium"
             >
-              Explore the world
+              Live a healthier life
             </h3>
             <p class="feature-box__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
@@ -107,7 +132,7 @@
             <h3
               class="heading-tertiary feature-box__text u-margin-bottom-small u-margin-top-medium"
             >
-              Explore the world
+              Find your way
             </h3>
             <p class="feature-box__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
@@ -122,7 +147,7 @@
             <h3
               class="heading-tertiary feature-box__text u-margin-bottom-small u-margin-top-medium"
             >
-              Explore the world
+              Meet the nature
             </h3>
             <p class="feature-box__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.Delectus
@@ -131,7 +156,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section id="section-tours" class="section-tours">
         <div class="u-margin-bottom-8">
           <h2 class="heading-secondary">Most Popular Tours</h2>
         </div>
@@ -309,19 +334,25 @@
           </div>
         </div>
       </section>
-      <section class="section-stories">
+      <section id="section-stories" class="section-stories">
         <div class="u-margin-bottom-8">
           <h2 class="heading-secondary">We make people genuinely happy</h2>
         </div>
 
         <div class="story">
-          <figure class="story__shape">
+          <div class="story__shape">
             <video class="story__image" autoplay muted loop>
               <source src="img/story.mp4" type="video/mp4" />
 
               Your browser does not support the video tag.
             </video>
-          </figure>
+          </div>
+          <div class="story__slider">
+            <img src="img/stories-1.jpg" alt="" class="story__slider__img" />
+            <img src="img/stories-2.jpg" alt="" class="story__slider__img" />
+            <img src="img/about1.jpg" alt="" class="story__slider__img" />
+          </div>
+
           <div class="story__text">
             <div class="story__text__stars">
               <i class="fas fa-star"></i>
@@ -348,7 +379,7 @@
       <div class="story__button u-margin-left-small u-margin-bottom-8">
         <a href="#" class="btn-text">Read all stories &rarr;</a>
       </div>
-      <section class="section-book">
+      <section id="section-book" class="section-book">
         <div class="row-booking">
           <div class="book">
             <div class="book__form">

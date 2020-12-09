@@ -4,8 +4,8 @@
   }
   &__button {
     background-color: #fff;
-    height: 7rem;
-    width: 7rem;
+    height: 5rem;
+    width: 5rem;
     position: fixed;
     top: 6rem;
     right: 6rem;
@@ -16,12 +16,12 @@
     cursor: pointer;
   }
   &__background {
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
+    top: 6rem;
+    right: 6rem;
     background-image: radial-gradient(
       $color-primary-light,
       $color-primary-dark
@@ -85,7 +85,10 @@
     transform: scale(50);
 
     @include respond(big-desktop) {
-      transform: scale(300);
+      transform: scale(100);
+    }
+    @include respond(tab-port) {
+      transform: scale(60);
     }
   }
   &__checkbox:checked ~ &__nav {
@@ -95,17 +98,17 @@
 
   &__icon {
     position: relative;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     background-color: #333;
-    width: 3rem;
-    height: 2px;
+    width: 2rem;
+    height: 1px;
     background-color: #333;
     display: inline-block;
 
     &::before,
     &::after {
-      width: 3rem;
-      height: 2px;
+      width: 2rem;
+      height: 1px;
       background-color: #333;
       display: inline-block;
       content: "";
@@ -115,17 +118,17 @@
     }
 
     &::before {
-      top: -0.8rem;
+      top: -0.4rem;
     }
     &::after {
-      top: 0.8rem;
+      top: 0.4rem;
     }
   }
   &__button:hover &__icon::before {
-    top: -1rem;
+    top: -0.7rem;
   }
   &__button:hover &__icon::after {
-    top: 1rem;
+    top: 0.7rem;
   }
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;

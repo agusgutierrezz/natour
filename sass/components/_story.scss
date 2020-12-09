@@ -10,18 +10,6 @@
   font-size: $default-font-size;
   padding-bottom: 30rem;
 
-  // @include respond(phone) {
-  //     width: 50%;
-
-  //     transform: skewX(0deg);
-  //   }
-  //   & > * {
-  //     transform: skewX(12deg);
-  //     @include respond(phone) {
-  //       transform: skewX(0deg);
-  //       padding: 2rem;
-  //     }
-  //   }
   &__shape {
     width: 42%;
     top: 0;
@@ -35,7 +23,7 @@
     width: 90%;
     transform: scale(1.4);
     border-radius: 3px;
-    transition: all 0.2s;
+
     margin-right: 5rem;
   }
   &__caption {
@@ -57,7 +45,7 @@
     width: 72%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     z-index: -1;
-    transition: all 0.2s;
+
     background-color: white;
     color: #444444;
 
@@ -88,6 +76,28 @@
       margin-bottom: 3rem;
       @include respond(phone) {
         padding-left: 10rem;
+      }
+    }
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    position: absolute;
+    top: 93%;
+    left: 0;
+    &__img {
+      cursor: pointer;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 3px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(5.1);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
       }
     }
   }
